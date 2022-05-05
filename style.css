@@ -13,6 +13,14 @@ Updated: 2022-05-03 08:36:22
 
 /* GENERELLE STYLES */
 
+body {
+  background-color: #f7f5ea;
+  font-family: degular, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -24,7 +32,7 @@ a {
 
 h1 {
   font-weight: 700;
-  font-size: 15rem;
+  font-size: 14rem;
 }
 h2 {
   font-weight: 700;
@@ -33,7 +41,7 @@ h2 {
 h3 {
   font-weight: 600;
   font-style: italic;
-  font-size: 6rem;
+  font-size: 4rem;
 }
 
 h4 {
@@ -48,6 +56,14 @@ p {
   font-style: normal;
 }
 
+.groen_tekst {
+  color: #1a592f !important;
+}
+
+.gul_tekst {
+  color: #ffe882 !important;
+}
+
 .section-inner.thin {
   max-width: 1140px;
 }
@@ -57,9 +73,17 @@ p {
   margin: 0 auto;
 }
 
+.page-header.section-inner.thin {
+  display: none;
+}
+
 .fullwidth img {
   width: 1140px;
   margin: 0 auto;
+}
+
+.first-h1 h1 {
+  padding: 0;
 }
 
 .small-width .wp-block-cover__inner-container {
@@ -98,4 +122,8 @@ p {
 .wp-block-video {
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.find-vej {
+  padding: 10% 0 10% 0;
 }
