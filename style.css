@@ -32,7 +32,7 @@ a {
 
 h1 {
   font-weight: 700;
-  font-size: 14rem;
+  font-size: 10rem;
 }
 h2 {
   font-weight: 700;
@@ -51,17 +51,13 @@ h4 {
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 500;
   font-style: normal;
 }
 
-.groen_tekst {
-  color: #1a592f !important;
-}
-
-.gul_tekst {
-  color: #ffe882 !important;
+.theme-by {
+  display: none;
 }
 
 .section-inner.thin {
@@ -75,19 +71,6 @@ p {
 
 .page-header.section-inner.thin {
   display: none;
-}
-
-.fullwidth img {
-  width: 1140px;
-  margin: 0 auto;
-}
-
-.first-h1 h1 {
-  padding: 0;
-}
-
-.small-width .wp-block-cover__inner-container {
-  max-width: 900px;
 }
 
 .entry-content .alignnone,
@@ -124,6 +107,158 @@ p {
   margin-top: 0;
 }
 
+/* HEADER */
+
+.alt-nav a {
+  color: #1a592f;
+  text-decoration: none;
+}
+
+.alt-nav a:hover {
+  color: #1a592f;
+}
+
+.site-header {
+  padding: 20px 0;
+}
+
+/* GENBRUGELIGE KLASSER */
+.groen_tekst {
+  color: #1a592f !important;
+}
+
+.gul_tekst {
+  color: #ffe882 !important;
+}
+
+.hvid_tekst {
+  color: #f7f5ea;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
 .find-vej {
   padding: 10% 0 10% 0;
+}
+
+.fullwidth img {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.small-width .wp-block-cover__inner-container {
+  max-width: 900px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* FORSIDE */
+
+.first-h1 h1 {
+  padding: 0;
+}
+
+/*FOOTER*/
+
+.section_footer.section-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.site-footer p + p {
+  font-weight: 500;
+  line-height: 1.7;
+  text-align: left;
+  color: #1a592f;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.site-footer p {
+  font-weight: 500;
+  line-height: 1.7;
+  text-align: left;
+  color: #1a592f;
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+.section_footer4 img {
+  margin-bottom: 10px;
+}
+
+/* FIND VEJ */
+
+button {
+  cursor: pointer;
+}
+#content {
+  display: none;
+}
+
+.button-gul {
+  background-color: transparent;
+  border: 3px solid #ffe882;
+  border-radius: 15px;
+  color: #ffe882;
+}
+
+.button-kopier {
+  background-color: transparent;
+}
+
+.button-kopier p {
+  padding-right: 10px;
+}
+
+/* KALENDER */
+
+.datepick-one-month:nth-of-type(2) {
+  display: none;
+}
+
+.cal_month_num_2 .datepick-one-month {
+  width: 100% !important;
+  float: left;
+}
+
+.datepick-header span {
+  font-size: 2rem !important;
+}
+
+th span {
+  font-size: 2rem !important;
+}
+
+.date-cell-content a {
+  font-size: 2rem !important;
+  text-align: right;
+  color: #1a592f !important;
+  padding-right: 5px !important;
+}
+
+.datepick-days-row td {
+  height: 75px !important;
+}
+
+.datepick-days-cell.datepick-unselectable.cal4date-6-8-2022.date2approve span {
+  font-size: 2rem !important;
+  text-align: right;
+  color: #1a592f !important;
+  padding-right: 5px !important;
+}
+
+.booking_form .form-group .controls select,
+.booking_form select,
+.booking_form textarea,
+.booking_form input[type="text"] {
+  width: 49% !important;
+}
+
+.wpbc_change_over_triangle {
+  width: 100% !important;
 }
