@@ -51,7 +51,7 @@ h4 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-style: normal;
 }
@@ -112,6 +112,7 @@ p {
 .alt-nav a {
   color: #1a592f;
   text-decoration: none;
+  font-size: 1.3rem;
 }
 
 .alt-nav a:hover {
@@ -120,6 +121,10 @@ p {
 
 .site-header {
   padding: 20px 0;
+}
+
+.wp-custom-logo .site-header {
+  padding: 18px 0;
 }
 
 /* GENBRUGELIGE KLASSER */
@@ -174,7 +179,7 @@ p {
   line-height: 1.7;
   text-align: left;
   color: #1a592f;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-top: 0;
 }
 
@@ -183,7 +188,7 @@ p {
   line-height: 1.7;
   text-align: left;
   color: #1a592f;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   margin-top: 0;
 }
 
