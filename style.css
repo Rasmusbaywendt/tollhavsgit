@@ -354,3 +354,9 @@ th span {
   font-size: 1.5rem !important;
   font-weight: 550 !important;
 }
+
+/* Kalender styles */
+
+.mec-event-description {
+  display: none;
+}
