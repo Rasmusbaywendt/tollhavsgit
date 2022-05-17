@@ -45,7 +45,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   font-style: normal;
 }
@@ -107,6 +107,10 @@ p {
   margin-top: 0;
 }
 
+.wp-block-columns:where(.has-background) {
+  padding: 3.25em 2.375em;
+}
+
 /* HEADER */
 
 .alt-nav a {
@@ -166,13 +170,25 @@ p {
 }
 
 .small-pad-top {
-  padding-top: 5%;
+  padding-top: 7%;
+}
+
+.margin-nul {
+  margin: 0;
 }
 
 /* FORSIDE */
 
 .first-h1 h1 {
   padding: 0;
+}
+
+.smal-tekst .wp-block-cover__inner-container {
+  width: 60%;
+}
+
+.wcps-container-151 .controlsWrap.border div {
+  border: 0 !important;
 }
 
 /*FOOTER*/
@@ -228,7 +244,57 @@ button {
   padding-right: 10px;
 }
 
-/* KALENDER */
+/* UDLEJNING */
+
+/* Style the button that is used to open and close the collapsible content */
+#myDIV {
+  color: #1a592f;
+  padding: 18px;
+  display: none;
+}
+
+#myDIV2 {
+  color: #1a592f;
+  padding: 18px;
+  display: none;
+}
+
+.collapsible2 {
+  background-color: transparent;
+  color: #1a592f;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 5px solid #1a592f;
+  outline: none;
+  margin: 80px 0 15px;
+  border-radius: 15px;
+}
+
+.collapsible2 p {
+  margin: 0;
+}
+
+.collapsible2 a {
+  text-decoration: none;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  border: none;
+  border-top: 5px solid #1a592f;
+  border-radius: 0;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
 
 .datepick-one-month:nth-of-type(2) {
   display: none;
@@ -274,4 +340,17 @@ th span {
 
 .wpbc_change_over_triangle {
   width: 100% !important;
+}
+
+.form-group {
+  color: #1a592f !important;
+}
+
+.wpbc_structure_form button {
+  background-color: transparent !important;
+  border: 2px solid #1a592f !important;
+  border-radius: 15px !important;
+  color: #1a592f !important;
+  font-size: 1.5rem !important;
+  font-weight: 550 !important;
 }
