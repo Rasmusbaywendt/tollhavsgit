@@ -4,9 +4,9 @@
 
 			<div class="section_footer section-inner">
 				<div class="section_footer1">
-					<p>Udvalg</p>
-					<p>Kontakt</p>
-					<p>Om os</p>
+					<a href="https://baywendt.dk/tollhavs/mad-og-drikke/">Udvalg</a>
+					<a href="#">Kontakt</a>
+					<a href="https://baywendt.dk/tollhavs/om-os/">Om os</a>
 				</div>
 			
 				<div class="section_footer2">
@@ -22,7 +22,7 @@
 
 				<div class="section_footer4">
 				<a class="facebook_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Facebook"><img src="/tollhavs/wp-content/themes/hamilton-child/img/facebook.svg" alt="" style="width:70px;height:70px;"></a>
-				<a href="https://www.instagram.com/mmd_case/" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;"> </a>
+				<a class="instagram_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;"> </a>
 				</div>
 
 				

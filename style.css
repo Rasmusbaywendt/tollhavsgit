@@ -16,7 +16,7 @@ Updated: 2022-05-03 08:36:22
 body {
   background-color: #f7f5ea;
   font-family: degular, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: 500;
   font-style: normal;
 }
@@ -56,8 +56,34 @@ p {
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .theme-by {
   display: none;
+}
+
+.button-basis-groen {
+  background-color: #1a592f;
+  color: #f7f5ea;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-basis-groen2 {
+  background-color: #1a592f;
+  color: #cce2cb;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-basis-groen2:hover {
+  opacity: 0.8;
+}
+
+.button-basis-groen:hover {
+  opacity: 0.8;
 }
 
 .section-inner.thin {
@@ -70,6 +96,10 @@ p {
 }
 
 .page-header.section-inner.thin {
+  display: none;
+}
+
+#comments {
   display: none;
 }
 
@@ -111,16 +141,20 @@ p {
   padding: 3.25em 2.375em;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* HEADER */
 
 .alt-nav a {
-  color: #1a592f;
+  color: #000;
   text-decoration: none;
   font-size: 1.3rem;
 }
 
 .alt-nav a:hover {
-  color: #1a592f;
+  color: #707070;
 }
 
 .site-header {
@@ -177,10 +211,38 @@ p {
   margin: 0;
 }
 
+.text-deco a {
+  text-decoration: underline;
+}
+
+.text-deco2 p {
+  text-decoration: underline;
+}
+
 /* FORSIDE */
 
 .first-h1 h1 {
   padding: 0;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-8px);
+  }
 }
 
 .smal-tekst .wp-block-cover__inner-container {
@@ -189,6 +251,14 @@ p {
 
 .wcps-container-151 .controlsWrap.border div {
   border: 0 !important;
+}
+
+.h3_insta a {
+  text-decoration: none;
+}
+
+.h3_insta a:hover {
+  text-decoration: underline;
 }
 
 /*FOOTER*/
@@ -216,8 +286,26 @@ p {
   margin-top: 0;
 }
 
-.section_footer4 img {
-  margin-bottom: 10px;
+.site-footer a {
+  font-weight: 500;
+  line-height: 1.7;
+  text-align: left;
+  color: #1a592f;
+  font-size: 1.2rem;
+  margin-top: 0;
+  display: block;
+}
+
+.section_footer1 a:hover {
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  border-bottom-color: transparent;
+}
+
+.section_footer3 a {
+  display: inline-block;
 }
 
 /* FIND VEJ */
@@ -246,7 +334,6 @@ button {
 
 /* UDLEJNING */
 
-/* Style the button that is used to open and close the collapsible content */
 #myDIV {
   color: #1a592f;
   padding: 18px;
@@ -260,15 +347,12 @@ button {
 }
 
 .collapsible2 {
-  background-color: transparent;
-  color: #1a592f;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: 5px solid #1a592f;
+  padding: 11px;
+  width: 24%;
   outline: none;
-  margin: 80px 0 15px;
-  border-radius: 15px;
+  margin: 88px 0 15px;
+  margin-right: 20px;
 }
 
 .collapsible2 p {
@@ -280,6 +364,23 @@ button {
   font-size: 1.3rem !important;
   font-weight: 500 !important;
   line-height: 1.5 !important;
+}
+
+#lokale1 {
+  font-size: 1rem;
+}
+
+.bk_calendar_frame.months_num_in_row_.cal_month_num_2.wpbc_timeslot_day_bg_as_available {
+  width: auto !important;
+}
+
+#booking_form1 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#Book {
+  text-align: center;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -309,15 +410,20 @@ button {
   font-size: 2rem !important;
 }
 
+.wpdevelop .form-group {
+  margin-bottom: 28px;
+}
+
 th span {
   font-size: 2rem !important;
 }
 
 .date-cell-content a {
   font-size: 2rem !important;
-  text-align: right;
-  color: #1a592f !important;
+  text-align: center;
+  color: #9a9898 !important;
   padding-right: 5px !important;
+  font-weight: 400 !important;
 }
 
 .datepick-days-row td {
@@ -326,9 +432,10 @@ th span {
 
 .datepick-days-cell.datepick-unselectable.cal4date-6-8-2022.date2approve span {
   font-size: 2rem !important;
-  text-align: right;
-  color: #1a592f !important;
+  text-align: center;
+  color: #9a9898 !important;
   padding-right: 5px !important;
+  font-weight: 400 !important;
 }
 
 .booking_form .form-group .controls select,
@@ -343,7 +450,50 @@ th span {
 }
 
 .form-group {
-  color: #1a592f !important;
+  color: #000 !important;
+}
+
+.wpbc_structure_calendar {
+  width: 50%;
+  display: inline-block;
+  padding: 0 2%;
+}
+
+.wpbc_structure_form {
+  display: inline-block;
+  width: 49%;
+}
+
+.booking_form .form-group {
+  margin: 28px 0px !important;
+}
+
+/* .wpbc-cell-box {
+  background-color: white !important;
+} */
+
+.datepick-inline
+  .datepick-one-month
+  .datepick
+  .datepick-current-day
+  .wpbc_time_dots,
+.datepick-inline .datepick-one-month .datepick .datepick-current-day a {
+  color: #000;
+  text-shadow: 0 -1px 0 #808080;
+}
+
+.block_hints .date2approve.block_check_in_out,
+.block_hints .block_pending,
+.datepick-inline .date2approve,
+td.timespartly.check_in_time.check_out_time.check_in_time_date_approved.check_out_time_date2approve
+  div.check-in-div,
+td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_in_time_date2approve
+  div.check-out-div {
+  background-color: #f7f5ea !important;
+}
+
+.datepick-title-row {
+  background-color: white !important;
 }
 
 .wpbc_structure_form button {
@@ -355,8 +505,420 @@ th span {
   font-weight: 550 !important;
 }
 
-/* Kalender styles */
+.datepick-inline .datepick-header {
+  color: #000 !important;
+  font-weight: 600;
+  text-shadow: 0 1px 0 #fff;
+}
+
+div.datepick-inline .datepick-title-row th {
+  border: 1px solid #ccc;
+  color: #121212 !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+/* EVENT styles */
 
 .mec-event-description {
   display: none;
+}
+
+/* SINGLE PAGE */
+
+.woocommerce ul.products li.product .button {
+  margin-top: 1em;
+  display: none;
+}
+
+.woocommerce div.product form.cart {
+  margin-bottom: 2em;
+  display: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs {
+  display: none;
+}
+
+.skip-link button {
+  display: none;
+}
+
+/* MAD, DRIKKE & MERE */
+
+.woocommerce ul.products li.product .price {
+  color: #1a592f !important;
+  display: block !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5em !important;
+  font-size: 1.3rem !important;
+}
+
+.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail:hover {
+  opacity: 60.5%;
+}
+
+#tab-description {
+  width: 50% !important;
+  display: inline-block;
+  padding-left: 4%;
+}
+.woocommerce-tabs.wc-tabs-wrapper {
+  width: 50%;
+  display: inline;
+}
+
+.product_meta {
+  display: none;
+}
+
+.woocommerce div.product div.summary {
+  margin-bottom: 0;
+}
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  color: #1a592f;
+  font-size: 1.25em;
+}
+
+.woocommerce-result-count {
+  display: none;
+}
+
+#tab-description h2:first-of-type {
+  display: none;
+}
+
+.wc-block-grid__product-title {
+  text-align: left;
+  font-size: 1.5rem !important;
+  font-weight: 500;
+}
+
+.woocommerce-loop-product__title {
+  font-size: 1.5rem !important;
+  font-weight: 500;
+}
+
+.related.products {
+  float: left;
+}
+
+#tab-description h2 {
+  font-size: 4rem !important;
+}
+
+.woocommerce-product-details__short-description {
+  display: none;
+}
+
+.price {
+  margin: 0;
+}
+
+/* MAD DRIKKE & MERE - KATEGORI */
+.woocommerce-result-count {
+  display: none;
+}
+
+.orderby {
+  display: none;
+}
+
+.skip-link.button {
+  display: none !important;
+}
+
+.liste li {
+  display: inline-block;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+
+.liste li:not(:last-of-type) {
+  border-right: 2px solid #d1cfc6;
+}
+
+.liste a {
+  text-decoration: none;
+  color: #707070;
+  font-size: 1.3rem;
+}
+
+.liste a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.cut a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* RESPONSIVE CSS */
+
+@media only screen and (min-width: 1200px) {
+  /* body {
+    background-color: green;
+  } */
+}
+
+@media only screen and (max-width: 1200px) {
+  /* body {
+    background-color: blue;
+  } */
+
+  h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 4%;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .wp-image-534 {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .gul_tekst.inline-block {
+    width: 60%;
+  }
+
+  .intro-tekst {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 8rem;
+  }
+
+  .wp-block-cover.alignfull.gul_tekst.mb-0.mt-0 {
+    min-height: 70vh !important;
+  }
+
+  .wp-block-cover.alignfull.is-light.mb-0.mt-0 {
+    min-height: 70vh !important;
+  }
+
+  .wp-block-column.text-align-center {
+    margin: auto 0;
+  }
+
+  .col-md-3.mec-col-table-c.mec-event-meta-wrap {
+    min-height: 85px;
+  }
+
+  .collapsible2 {
+    margin: 28px 0 15px;
+  }
+
+  .wpbc_structure_form {
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  .collapsible2 a {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* body {
+    background-color: red;
+    font-size: 1rem;
+  } */
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 3.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .smal-tekst .wp-block-cover__inner-container {
+    width: 75%;
+  }
+
+  .wcps-container-151 .slick-slide {
+    margin: 10px;
+    text-align: left;
+  }
+
+  .wp-block-column.text-align-center {
+    margin: auto;
+  }
+
+  .gul_tekst.inline-block {
+    width: 80%;
+  }
+
+  .wc-block-grid__product-title {
+    font-size: 1.2rem !important;
+  }
+
+  .intro-tekst {
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  .wpbc_structure_calendar {
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .collapsible2 a {
+    font-size: 1rem !important;
+  }
+
+  #tab-description {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* body {
+    background-color: lightblue;
+  } */
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  .page-id-33 h2 {
+    font-size: 4rem;
+  }
+
+  .wp-image-534 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .gul_tekst.inline-block {
+    width: 58%;
+  }
+
+  .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
+    margin: 0 auto;
+  }
+
+  .wc-block-grid__product-title {
+    text-align: center;
+    margin-bottom: 20% !important;
+  }
+
+  .wc-block-grid__products {
+    margin-bottom: 20%;
+  }
+
+  .mec-event-list-standard .mec-event-title {
+    margin: 60px 0 30px !important;
+  }
+
+  .woocommerce div.product .woocommerce-tabs .panel {
+    margin: 0 0 2em !important;
+    padding: 0;
+  }
+
+  #tab-description {
+    width: 100% !important;
+  }
+
+  /* FOOTER */
+
+  .section_footer1 a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .section_footer3 a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .site-footer p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .site-footer p + p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .section_footer.section-inner {
+    display: block;
+  }
+
+  .section_footer1 {
+    display: block;
+  }
+  .section_footer2 {
+    display: block;
+  }
+  .section_footer3 {
+    display: block;
+  }
+  .section_footer4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .section_footer.section-inner div {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* body {
+    background-color: lightyellow;
+  } */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .kat a {
+    font-size: 1rem;
+  }
+
+  .page-id-33 h2 {
+    font-size: 3.5rem;
+  }
+
+  .wc-block-grid__products {
+    margin-bottom: 50%;
+  }
+
+  .mec-event-list-standard .mec-event-title {
+    font-size: 2.3rem !important;
+  }
+
+  .wpbc_structure_calendar {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
