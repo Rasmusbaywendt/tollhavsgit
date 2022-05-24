@@ -64,26 +64,9 @@ html {
   display: none;
 }
 
-.button-basis-groen {
-  background-color: #1a592f;
-  color: #f7f5ea;
-  border: none;
-  border-radius: 5px;
-}
-
-.button-basis-groen2 {
-  background-color: #1a592f;
-  color: #cce2cb;
-  border: none;
-  border-radius: 5px;
-}
-
-.button-basis-groen2:hover {
-  opacity: 0.8;
-}
-
-.button-basis-groen:hover {
-  opacity: 0.8;
+ol,
+ul {
+  margin: 0.5em 0 1.5em 0;
 }
 
 .section-inner.thin {
@@ -217,6 +200,28 @@ a {
 
 .text-deco2 p {
   text-decoration: underline;
+}
+
+.button-basis-groen {
+  background-color: #1a592f;
+  color: #f7f5ea;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-basis-groen2 {
+  background-color: #1a592f;
+  color: #cce2cb;
+  border: none;
+  border-radius: 5px;
+}
+
+.button-basis-groen2:hover {
+  opacity: 0.8;
+}
+
+.button-basis-groen:hover {
+  opacity: 0.8;
 }
 
 /* FORSIDE */
