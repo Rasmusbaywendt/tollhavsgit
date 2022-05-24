@@ -383,40 +383,6 @@ button {
   text-align: center;
 }
 
-/* Kalender på uddlejninng */
-/* Tallene i kalenderen */
-.date-cell-content a {
-  font-size: 1rem !important;
-  text-align: center;
-  color: #4d4d4d !important;
-}
-
-/* Stregerne mellem kalenderens felter. */
-.block_hints .block_free,
-.block_hints .block_time,
-.block_hints .block_booked,
-.block_hints .block_pending,
-.block_hints .block_check_in_out,
-.datepick-inline .datepick-days-cell {
-  border: none;
-}
-
-/*  Kalenderens felter får en hvis baggrund */
-.block_hints .block_free,
-.block_hints .block_time,
-.block_hints .block_check_in_out div.check-in-div,
-.block_hints .block_check_in_out div.check-out-div,
-.datepick-inline .date_available,
-.datepick-inline .timespartly.check_in_time div.check-in-div,
-.datepick-inline .timespartly.check_out_time div.check-out-div {
-  background: #fff;
-}
-
-/* Str. på teksten i ugedagene øverst */
-th span {
-  font-size: 1rem !important;
-}
-
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
   border: none;
@@ -448,14 +414,16 @@ th span {
   margin-bottom: 28px;
 }
 
+/* Str. på teksten i ugedagene øverst */
 th span {
-  font-size: 2rem !important;
+  font-size: 1rem !important;
 }
 
+/* Tal Tekst i kalender felter */
 .date-cell-content a {
-  font-size: 2rem !important;
+  font-size: 1rem !important;
   text-align: center;
-  color: #9a9898 !important;
+  color: #4d4d4d !important;
   padding-right: 5px !important;
   font-weight: 400 !important;
 }
@@ -467,7 +435,7 @@ th span {
 .datepick-days-cell.datepick-unselectable.cal4date-6-8-2022.date2approve span {
   font-size: 2rem !important;
   text-align: center;
-  color: #9a9898 !important;
+  color: #4d4d4d !important;
   padding-right: 5px !important;
   font-weight: 400 !important;
 }
@@ -513,7 +481,7 @@ th span {
   .wpbc_time_dots,
 .datepick-inline .datepick-one-month .datepick .datepick-current-day a {
   color: #000;
-  text-shadow: 0 -1px 0 #808080;
+  text-shadow: none;
 }
 
 .block_hints .date2approve.block_check_in_out,
@@ -550,6 +518,27 @@ div.datepick-inline .datepick-title-row th {
   color: #121212 !important;
   font-weight: 400 !important;
   text-transform: uppercase;
+}
+
+/* Linjer mellem kalender fjernes */
+.block_hints .block_free,
+.block_hints .block_time,
+.block_hints .block_booked,
+.block_hints .block_pending,
+.block_hints .block_check_in_out,
+.datepick-inline .datepick-days-cell {
+  border: none;
+}
+
+/* Felterne i kalenderen bliver hvide */
+.block_hints .block_free,
+.block_hints .block_time,
+.block_hints .block_check_in_out div.check-in-div,
+.block_hints .block_check_in_out div.check-out-div,
+.datepick-inline .date_available,
+.datepick-inline .timespartly.check_in_time div.check-in-div,
+.datepick-inline .timespartly.check_out_time div.check-out-div {
+  background: none repeat scroll 0 0 #fff;
 }
 
 /* EVENT styles */
