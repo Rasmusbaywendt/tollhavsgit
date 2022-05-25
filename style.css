@@ -560,15 +560,16 @@ div.datepick-inline .datepick-title-row th {
 /* event-single-page */
 
 .mec-events-event-image {
-  max-width: 43%;
+  max-width: 44%;
   display: inline-block;
   margin-top: 5%;
 }
 
-.mec-event-content {
+.mec-single-event .mec-event-content {
   max-width: 45%;
-  display: inline-block;
-  margin-left: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: inline-end;
 }
 
 .mec-wrap .mec-single-title,
