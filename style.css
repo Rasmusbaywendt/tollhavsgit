@@ -580,6 +580,9 @@ div.datepick-inline .datepick-title-row th {
 .mec-single-event-description.mec-events-content p {
   font-size: 1rem !important;
 }
+.mec-event-export-module.mec-frontbox {
+  margin-top: 9%;
+}
 
 /* SINGLE PAGE */
 
