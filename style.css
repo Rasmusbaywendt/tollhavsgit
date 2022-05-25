@@ -557,6 +557,20 @@ div.datepick-inline .datepick-title-row th {
   font-style: italic;
 }
 
+/* event-single-page */
+
+.mec-events-event-image {
+  max-width: 43%;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.mec-event-content {
+  max-width: 45%;
+  display: inline-block;
+  margin-left: 4%;
+}
+
 /* SINGLE PAGE */
 
 .woocommerce ul.products li.product .button {
