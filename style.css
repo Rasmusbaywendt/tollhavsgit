@@ -569,7 +569,14 @@ div.datepick-inline .datepick-title-row th {
   max-width: 45%;
   margin-left: 5%;
   margin-right: 5%;
-  float: inline-end;
+  float: right;
+}
+
+.mec-single-event .mec-event-export-module {
+  display: none;
+}
+.mec-events-meta-group.mec-events-meta-group-countdown {
+  display: none;
 }
 
 .mec-wrap .mec-single-title,
@@ -579,9 +586,6 @@ div.datepick-inline .datepick-title-row th {
 
 .mec-single-event-description.mec-events-content p {
   font-size: 1rem !important;
-}
-.mec-event-export-module.mec-frontbox {
-  margin-top: 9%;
 }
 
 /* SINGLE PAGE */
