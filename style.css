@@ -571,6 +571,15 @@ div.datepick-inline .datepick-title-row th {
   margin-left: 4%;
 }
 
+.mec-wrap .mec-single-title,
+.single-mec-events .mec-wrap.mec-no-access-error h1 {
+  font-size: 50px;
+}
+
+.mec-single-event-description.mec-events-content p {
+  font-size: 1rem !important;
+}
+
 /* SINGLE PAGE */
 
 .woocommerce ul.products li.product .button {
