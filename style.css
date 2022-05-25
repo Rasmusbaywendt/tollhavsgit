@@ -553,7 +553,8 @@ div.datepick-inline .datepick-title-row th {
 
 /* Beskrivelse af event. */
 .mec-event-description {
-  display: none;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 /* SINGLE PAGE */
