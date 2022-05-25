@@ -1,6 +1,7 @@
 </main>
 		
 		<footer class="site-footer">
+		<img src="/tollhavs/wp-content/themes/hamilton-child/logo.svg" alt="">
 
 			<div class="section_footer section-inner">
 				<div class="section_footer1">
@@ -16,13 +17,13 @@
 				</div>
 
 				<div class="section_footer3">
-					<p>Adr. Refshalevej 151 <br> 3400 København H</p>
-					<p>Tlf. <a href="tel:+4528993599"> (+45) 28 99 35 99</p></a>
+					<p> Refshalevej 151 <br> 3400 København H</p>
+					<p><a href="tel:+4528993599"> (+45) 28 99 35 99</p></a>
 				</div>
 
 				<div class="section_footer4">
-				<a class="facebook_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Facebook"><img src="/tollhavs/wp-content/themes/hamilton-child/img/facebook.svg" alt="" style="width:70px;height:70px;"></a>
-				<a class="instagram_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;"> </a>
+				<a class="facebook_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Facebook"><img src="/tollhavs/wp-content/themes/hamilton-child/img/facebook.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
+				<a class="instagram_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
 				</div>
 
 				
