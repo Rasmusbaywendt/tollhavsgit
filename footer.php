@@ -1,7 +1,10 @@
 </main>
 		
 		<footer class="site-footer">
-		<img src="/tollhavs/wp-content/themes/hamilton-child/logo.svg" alt="">
+			
+			<div class="footer_icon">
+					<img src="/tollhavs/wp-content/themes/hamilton-child/logo.svg" alt="">
+			</div>
 
 			<div class="section_footer section-inner">
 				<div class="section_footer1">
@@ -26,8 +29,12 @@
 				<a class="instagram_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
 				</div>
 
-				
 			</div>
+			<div class="section_footer5">
+					<a href="https://baywendt.dk/tollhavs/cookie-policy-eu/">Privatlivspolitik</a>
+					<a href="https://www.findsmiley.dk/Sider/KontrolRapport.aspx?Virk1910818">Smileyordning</a>
+
+				</div>
 
 		</footer><!-- footer -->
 	    
