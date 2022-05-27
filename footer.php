@@ -25,14 +25,14 @@
 				</div>
 
 				<div class="section_footer4">
-				<a class="facebook_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Facebook"><img src="/tollhavs/wp-content/themes/hamilton-child/img/facebook.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
-				<a class="instagram_ikon" href="https://www.instagram.com/mmd_case/" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
+				<a class="facebook_ikon" href="https://www.instagram.com/mmd_case/" target="_blank" aria-label="Facebook"><img src="/tollhavs/wp-content/themes/hamilton-child/img/facebook.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
+				<a class="instagram_ikon" href="https://www.instagram.com/mmd_case/" target="_blank" aria-label="Instagram"><img src="/tollhavs/wp-content/themes/hamilton-child/img/insta.svg" alt="" style="width:70px;height:70px;" target="_blank"></a>
 				</div>
 
 			</div>
 			<div class="section_footer5">
 					<a href="https://baywendt.dk/tollhavs/cookie-policy-eu/">Privatlivspolitik</a>
-					<a href="https://www.findsmiley.dk/Sider/KontrolRapport.aspx?Virk1910818">Smileyordning</a>
+					<a href="https://www.findsmiley.dk/Sider/KontrolRapport.aspx?Virk1910818" target="_blank">Smileyordning</a>
 
 				</div>
 

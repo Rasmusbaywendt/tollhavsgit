@@ -136,13 +136,33 @@ a {
 /* HEADER */
 
 .alt-nav a {
-  color: #000;
+  color: #707070;
   text-decoration: none;
   font-size: 1.3rem;
 }
 
+.page-id-28 #menu-item-336 a {
+  color: #000;
+}
+
+.page-id-33 #menu-item-340 a {
+  color: #000;
+}
+
+.page-id-35 #menu-item-339 a {
+  color: #000;
+}
+
+.page-id-37 #menu-item-338 a {
+  color: #000;
+}
+
+.page-id-39 #menu-item-337 a {
+  color: #000;
+}
+
 .alt-nav a:hover {
-  color: #707070;
+  color: #000;
 }
 
 .site-header {
@@ -193,6 +213,9 @@ a {
 
 .small-pad-top {
   padding-top: 7%;
+}
+.margin-bottom {
+  margin-bottom: 10%;
 }
 
 .margin-nul {
@@ -602,10 +625,17 @@ div.datepick-inline .datepick-title-row th {
   position: absolute !important;
   top: auto !important;
   right: 34px !important;
-  padding: 0.7em 1.5em !important;
+  padding: 0.7em 1.3em !important;
   line-height: 1.5 !important;
   height: auto !important;
   border-radius: 5px !important;
+}
+
+.mec-event-footer .mec-booking-button:hover {
+  opacity: 0.8;
+  color: #000 !important;
+  background-color: #f3a264 !important;
+  border: none;
 }
 
 /* event-single-page */
@@ -667,6 +697,16 @@ div.datepick-inline .datepick-title-row th {
   font-weight: 500 !important;
   margin-bottom: 0.5em !important;
   font-size: 1.3rem !important;
+}
+
+.woocommerce-Price-amount.amount {
+  color: #1a592f;
+}
+
+.wc-block-grid__product {
+  text-align: left;
+  list-style: none;
+  font-weight: 500;
 }
 
 .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail:hover {
