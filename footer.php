@@ -9,7 +9,7 @@
 			<div class="section_footer section-inner">
 				<div class="section_footer1">
 					<a href="https://baywendt.dk/tollhavs/mad-og-drikke/">Udvalg</a>
-					<a href="#">Kontakt</a>
+					<a href="https://baywendt.dk/tollhavs/om-os/#kontakt">Kontakt</a>
 					<a href="https://baywendt.dk/tollhavs/om-os/">Om os</a>
 				</div>
 			

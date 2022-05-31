@@ -190,6 +190,10 @@ a {
   color: #f7f5ea;
 }
 
+.graa_tekst {
+  color: #707070;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -218,6 +222,10 @@ a {
   margin-bottom: 10%;
 }
 
+.margin-top {
+  margin-top: 5%;
+}
+
 .margin-nul {
   margin: 0;
 }
@@ -238,12 +246,31 @@ a {
   padding: 0.7em 1.5em;
 }
 
+.button-basis-groen:hover {
+  opacity: 0.8;
+}
+
 .button-basis-groen2 {
   background-color: #1a592f;
   color: #cce2cb;
   border: none;
   border-radius: 5px;
   padding: 0.7em 1.5em;
+}
+
+.button-basis-groen2:hover {
+  opacity: 0.8;
+}
+
+.button-basis-outline {
+  background-color: transparent;
+  color: #303030;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  padding: 0.7em 1.5em;
+}
+.button-basis-outline:hover {
+  opacity: 0.8;
 }
 
 .button-basis-groen2:hover {
@@ -398,21 +425,20 @@ button {
 
 #myDIV {
   color: #1a592f;
-  padding: 18px;
   display: none;
 }
 
 #myDIV2 {
   color: #1a592f;
-  padding: 18px;
   display: none;
 }
 
 .collapsible2 {
   cursor: pointer;
   outline: none;
-  margin: 88px 0 15px;
   margin-right: 20px;
+  margin: 28px 0 15px;
+  display: block;
 }
 
 .collapsible2 p {
@@ -423,13 +449,59 @@ button {
 
 .collapsible2 a {
   text-decoration: none;
-  font-size: 1.2rem !important;
   font-weight: 500 !important;
   line-height: 1.3 !important;
+  font-size: 1.3rem !important;
+}
+
+.collapsible1 {
+  background-color: transparent;
+  color: #1a592f;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.collapsible1 p {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.collapsible1 a {
+  text-decoration: none;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  font-size: 1.3rem !important;
 }
 
 #lokale1 {
   font-size: 1rem;
+  background-color: #fff;
+}
+
+.wpdevelop label {
+  font-weight: normal !important;
+}
+
+.datepick-inline .calendar-links .datepick-prev a,
+.datepick-inline .calendar-links .datepick-next a,
+.datepick-inline .calendar-links .datepick-prev a:hover,
+.datepick-inline .calendar-links .datepick-next a:hover {
+  color: #000 !important;
+  font-weight: 500 !important;
+}
+
+.datepick-inline .calendar-links .datepick-prev a,
+.datepick-inline .calendar-links .datepick-next a {
+  font-size: 3em !important;
+}
+
+.datepick-inline .datepick-header {
+  line-height: 1.1em !important;
+}
+
+.udlejning_sektion .wp-block-cover__inner-container {
+  max-width: 760px;
 }
 
 .bk_calendar_frame.months_num_in_row_.cal_month_num_2.wpbc_timeslot_day_bg_as_available {
@@ -569,11 +641,15 @@ td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_i
 
 .wpbc_structure_form button {
   background-color: transparent !important;
-  border: 2px solid #1a592f !important;
-  border-radius: 15px !important;
-  color: #1a592f !important;
-  font-size: 1.5rem !important;
-  font-weight: 550 !important;
+  border: 1px solid #303030 !important;
+  border-radius: 5px !important;
+  color: #303030 !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  padding: 0.4em 1.2em !important;
+  height: auto;
+  line-height: 1.3 !important;
+  text-transform: uppercase !important;
 }
 
 .datepick-inline .datepick-header {
@@ -616,8 +692,34 @@ div.datepick-inline .datepick-title-row th {
 .mec-wrap .mec-totalcal-box select,
 .mec-checkboxes-search .mec-searchbar-category-wrap,
 .mec-wrap .mec-totalcal-box .mec-totalcal-view span {
-  font-family: degular;
+  font-family: degular !important;
   text-transform: uppercase;
+}
+
+.mec-wrap .mec-search-form .mec-date-search select {
+  width: calc(70% - 130px);
+  background-color: #fff;
+}
+
+.mec-wrap .mec-search-form .mec-date-search select:last-child {
+  width: 20%;
+  background: #fff;
+}
+
+.page-id-37 .mec-sl-calendar {
+  background-color: #fff !important;
+}
+
+option {
+  font-family: degular !important;
+}
+
+.mec-checkboxes-search .mec-searchbar-category-wrap,
+.mec-wrap .mec-totalcal-box .mec-totalcal-view span,
+.mec-wrap .mec-totalcal-box input,
+.mec-wrap .mec-totalcal-box select {
+  font-size: 1.3rem;
+  color: #313131;
 }
 
 .mec-wrap .mec-totalcal-box .mec-totalcal-view span {
@@ -632,6 +734,28 @@ div.datepick-inline .datepick-title-row th {
   top: 25%;
 }
 
+.mec-load-more-button {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  border-radius: 5px !important;
+  line-height: 1.2 !important;
+  height: auto !important;
+  background-color: #f7f5ea !important;
+  padding: 0.9em 1.3em !important;
+  color: #303030 !important;
+  border: 1px solid #303030;
+}
+.mec-load-more-button:hover {
+  opacity: 0.8;
+  color: #303030 !important;
+  background-color: #f7f5ea !important;
+  border: 1px solid #303030;
+}
+
+.mec-event-footer {
+  background: none !important;
+}
+
 /* Beskrivelse af event. */
 
 .mec-month-divider span {
@@ -640,6 +764,13 @@ div.datepick-inline .datepick-title-row th {
 
 .mec-event-list-standard .mec-event-title {
   font-size: 4rem !important;
+  font-style: italic !important;
+}
+
+.mec-event-list-standard .mec-event-title a {
+  text-transform: normal !important;
+  color: #463e3e !important;
+  font-weight: 600;
 }
 
 .mec-event-description {
@@ -664,7 +795,7 @@ div.datepick-inline .datepick-title-row th {
   letter-spacing: 1 !important;
   text-transform: uppercase !important;
   background: #f3a264 !important;
-  color: #463e3e !important;
+  color: #f7f5ea !important;
   position: absolute !important;
   top: auto !important;
   right: 34px !important;
@@ -672,11 +803,12 @@ div.datepick-inline .datepick-title-row th {
   line-height: 1.5 !important;
   height: auto !important;
   border-radius: 5px !important;
+  border: 1px solid #e8e8e8 !important;
 }
 
 .mec-event-footer .mec-booking-button:hover {
   opacity: 0.8;
-  color: #000 !important;
+  color: #f7f5ea !important;
   background-color: #f3a264 !important;
   border: none;
 }
@@ -689,10 +821,14 @@ div.datepick-inline .datepick-title-row th {
   margin-top: 5%;
 }
 
+.mec-event-info-desktop.mec-event-meta.mec-color-before.mec-frontbox {
+  margin-top: 8%;
+}
+
 .mec-single-event .mec-event-content {
-  max-width: 45%;
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 50%;
+  margin-left: 1%;
+  margin-right: 1%;
   float: right;
 }
 
@@ -705,18 +841,30 @@ div.datepick-inline .datepick-title-row th {
 
 .mec-wrap .mec-single-title,
 .single-mec-events .mec-wrap.mec-no-access-error h1 {
-  font-size: 50px;
+  font-size: 4rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: inherit !important;
+  color: #303030;
 }
 
 .mec-single-event-description.mec-events-content p {
-  font-size: 1rem !important;
+  font-size: 1.3rem !important;
 }
 
 .mec-month-divider span {
   font-size: 2.5rem;
 }
 
-/* SINGLE PAGE */
+.mec-wrap .col-md-8 {
+  width: 76.7%;
+}
+
+.mec-wrap .col-md-4 {
+  width: 23.3%;
+}
+
+/* WOOCOMMERCE SINGLE PAGE */
 
 .woocommerce ul.products li.product .button {
   margin-top: 1em;
@@ -798,6 +946,10 @@ div.datepick-inline .datepick-title-row th {
   font-weight: 500;
 }
 
+.wc-block-grid__product-title p {
+  margin: 0;
+}
+
 .woocommerce-loop-product__title {
   font-size: 1.5rem !important;
   font-weight: 500;
@@ -850,12 +1002,11 @@ div.datepick-inline .datepick-title-row th {
 
 .liste a:hover {
   color: #000;
-  text-decoration: underline;
 }
 
 .cut a {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* RESPONSIVE CSS */
@@ -924,17 +1075,9 @@ div.datepick-inline .datepick-title-row th {
     min-height: 85px;
   }
 
-  .collapsible2 {
-    margin: 28px 0 15px;
-  }
-
   .wpbc_structure_form {
     width: 100%;
     margin-left: 10%;
-  }
-
-  .collapsible2 a {
-    font-size: 1.2rem !important;
   }
 }
 
@@ -1123,4 +1266,39 @@ div.datepick-inline .datepick-title-row th {
     padding: 0;
     margin: 0 auto;
   }
+}
+
+/* Pop-up */
+
+.pum-theme-1245 .pum-title,
+.pum-theme-enterprise-blue .pum-title {
+  color: #1a592f !important;
+  font-family: degular !important;
+  font-weight: 600 !important;
+  font-size: 4rem !important;
+}
+
+.pum-theme-1245 .pum-content,
+.pum-theme-enterprise-blue .pum-content {
+  color: #1a592f !important;
+}
+
+.pum-theme-1245 .pum-content + .pum-close,
+.pum-theme-enterprise-blue .pum-content + .pum-close {
+  color: #f7f5ea !important;
+  background-color: #1a592f !important;
+  width: 55px !important;
+  height: 55px !important;
+  font-size: 52px !important;
+}
+
+.pum-theme-1245 .pum-container,
+.pum-theme-enterprise-blue .pum-container {
+  background-color: #f7f5ea !important;
+}
+
+.entry-content .alignwide {
+  margin-left: 0;
+  max-width: 1140px;
+  width: 1140px;
 }
