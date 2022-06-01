@@ -177,6 +177,50 @@ a {
   padding: 20px 0;
 }
 
+/* BURGERMENU */
+
+.site-nav ul:first-child li {
+  font-size: 3rem;
+}
+
+#menu-min-menu-1 {
+  color: #707070;
+}
+
+.page-id-28
+  .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item.page-item-28.current_page_item.menu-item-336 {
+  color: #000;
+}
+
+.page-id-33
+  .menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-33.current_page_item.menu-item-340 {
+  color: #000;
+}
+
+.page-id-35
+  .menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-35.current_page_item.menu-item-339 {
+  color: #000;
+}
+
+.page-id-37
+  .menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-37.current_page_item.menu-item-338 {
+  color: #000;
+}
+
+.page-id-39
+  .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-337 {
+  color: #000;
+}
+
+.site-nav {
+  background: #f7f5ea;
+}
+
+.site-nav ul:last-child a:hover,
+.site-nav ul:last-child .current-menu-item > a {
+  border-bottom-color: transparent !important;
+}
+
 /* GENBRUGELIGE KLASSER */
 .groen_tekst {
   color: #1a592f !important;
@@ -517,14 +561,12 @@ button {
   text-align: center;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
   border: none;
   border-top: 5px solid #1a592f;
   border-radius: 0;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
   display: none;
@@ -697,7 +739,7 @@ div.datepick-inline .datepick-title-row th {
 }
 
 .mec-wrap .mec-search-form .mec-date-search select {
-  width: calc(70% - 130px);
+  width: 33%;
   background-color: #fff;
 }
 
@@ -718,12 +760,12 @@ option {
 .mec-wrap .mec-totalcal-box .mec-totalcal-view span,
 .mec-wrap .mec-totalcal-box input,
 .mec-wrap .mec-totalcal-box select {
-  font-size: 1.3rem;
+  font-size: 15px;
   color: #313131;
 }
 
 .mec-wrap .mec-totalcal-box .mec-totalcal-view span {
-  font-size: 1.3rem;
+  font-size: 15px;
   padding: 0 20px;
 }
 
@@ -1012,15 +1054,20 @@ option {
 /* RESPONSIVE CSS */
 
 @media only screen and (min-width: 1200px) {
-  /* body {
+  body {
     background-color: green;
-  } */
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-  /* body {
+  body {
     background-color: blue;
-  } */
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 8rem;
+  }
 
   h2 {
     font-size: 3rem;
@@ -1040,6 +1087,10 @@ option {
     font-size: 1.2rem;
   }
 
+  .wp-block-cover {
+    padding: 8%;
+  }
+
   .wp-image-534 {
     width: 65%;
     margin: 0 auto;
@@ -1052,11 +1103,6 @@ option {
   .intro-tekst {
     width: 80%;
     margin: 0 auto;
-  }
-
-  h1 {
-    font-weight: 700;
-    font-size: 8rem;
   }
 
   .wp-block-cover.alignfull.gul_tekst.mb-0.mt-0 {
@@ -1079,13 +1125,80 @@ option {
     width: 100%;
     margin-left: 10%;
   }
+
+  .section_footer5 a {
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .alignwide.gul_tekst {
+    max-width: 100% !important;
+  }
+
+  .om_os_tekst .wp-block-cover__inner-container {
+    width: 100%;
+    padding-right: 25%;
+  }
+
+  .wp-block-cover.alignfull.is-light.om_os_tekst {
+    min-height: 42vh !important;
+  }
+
+  .wp-block-cover.alignfull.gul_tekst.toll_havs_crew {
+    min-height: 60vh !important;
+  }
+
+  .wp-block-cover.alignfull.is-light.en_del_af_holdet {
+    min-height: 63vh !important;
+  }
+
+  #kontakt {
+    min-height: 42vh !important;
+  }
+
+  .toll_havs_crew .wp-container-2.wp-block-column {
+    margin: auto;
+  }
+
+  .en_del_af_holdet .wp-container-6.wp-block-column {
+    margin: auto;
+  }
+
+  .mec-totalcal-monthlyview {
+    float: right !important;
+  }
+
+  .mec-totalcal-listview.mec-totalcalview-selected {
+    float: right !important;
+  }
+
+  .mec-checkboxes-search .mec-searchbar-category-wrap,
+  .mec-wrap .mec-totalcal-box .mec-totalcal-view span,
+  .mec-wrap .mec-totalcal-box input,
+  .mec-wrap .mec-totalcal-box select {
+    font-size: 1rem;
+    color: #313131;
+  }
+
+  .mec-wrap .mec-totalcal-box .mec-totalcal-view span {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+
+  .wpbc_structure_form {
+    width: 100%;
+    margin-left: 2%;
+    max-width: 92%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  /* body {
+  body {
     background-color: red;
     font-size: 1rem;
-  } */
+  }
 
   h1 {
     font-size: 6rem;
@@ -1097,6 +1210,10 @@ option {
 
   p {
     font-size: 1rem;
+  }
+
+  .wp-block-cover.alignfull {
+    padding: 8%;
   }
 
   .smal-tekst .wp-block-cover__inner-container {
@@ -1137,18 +1254,74 @@ option {
   #tab-description {
     width: 80% !important;
   }
+
+  .wp-block-spacer {
+    height: 16px !important;
+  }
+
+  .wp-image-955 {
+    padding: 7px;
+  }
+  .button-kopier {
+    padding: 0;
+  }
+
+  .gul_tekst.inline-block {
+    margin: 0;
+  }
+
+  .om_os_tekst .wp-block-cover__inner-container {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .mec-event-list-standard .mec-event-title {
+    font-size: 2.5rem !important;
+    font-style: italic !important;
+  }
+
+  .mec-event-description {
+    font-size: 1rem !important;
+  }
+
+  .mec-date-details span {
+    font-size: 1rem !important;
+  }
+
+  .mec-time-details span {
+    font-size: 1rem !important;
+  }
+
+  .mec-event-list-standard .mec-col-table-c.mec-event-image-wrap {
+    display: table-cell;
+    width: 30% !important;
+  }
+
+  .mec-wrap .mec-totalcal-box .mec-totalcal-view span {
+    margin-top: 0px !important;
+  }
+
+  .wpbc_structure_form {
+    width: 100%;
+    margin-left: 0;
+    max-width: 92%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  /* body {
+  body {
     background-color: lightblue;
-  } */
+  }
   h1 {
     font-size: 4rem;
   }
   h2 {
     margin-top: 4%;
     margin-bottom: 4%;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 
   .page-id-33 h2 {
@@ -1188,6 +1361,14 @@ option {
 
   #tab-description {
     width: 100% !important;
+  }
+
+  .has-text-align-center.groen_tekst {
+    font-size: 1.3rem;
+  }
+
+  .mec-event-list-standard .mec-event-title {
+    margin: 0px 0 30px !important;
   }
 
   /* FOOTER */
@@ -1233,15 +1414,66 @@ option {
   .section_footer.section-inner div {
     margin: 0 0 20px 0;
   }
+
+  .section_footer5 {
+    width: 41%;
+    margin: 0 auto;
+    border-top: 2px solid #e0dad6;
+  }
+
+  .wp-block-spacer {
+    height: 30px !important;
+  }
+  .wc-block-grid__product-title {
+    text-align: center;
+    margin-bottom: 0% !important;
+  }
+
+  .wc-block-grid__product-price.price {
+    margin-bottom: 15% !important;
+  }
+
+  .wc-block-grid__product-price.price {
+    text-align: center;
+  }
+
+  .wp-container-1.wp-elements-191fc4f3760dc05ac54981ca5e44a503.wp-block-group.has-link-color {
+    padding: 0 0 2em 0 !important;
+  }
+
+  .mec-wrap .mec-search-form .mec-date-search select:last-child {
+    width: 56% !important;
+    background: #fff;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-  /* body {
+  body {
     background-color: lightyellow;
-  } */
+  }
 
   h1 {
     font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    margin-bottom: 18px;
+  }
+
+  .small-pad-top {
+    padding-top: 0;
+  }
+
+  .wp-image-955 {
+    padding: 13px;
+  }
+
+  .has-text-align-center.groen_tekst {
+    font-size: 1rem;
   }
 
   .kat a {
@@ -1265,6 +1497,46 @@ option {
     display: inline-block;
     padding: 0;
     margin: 0 auto;
+  }
+
+  .footer_icon {
+    margin-bottom: 36px;
+  }
+
+  .has-text-align-center.groen_tekst.h3_insta {
+    font-size: 2rem;
+  }
+
+  .wp-block-columns:where(.has-background) {
+    padding: 1.2em 1.2em;
+  }
+
+  .wp-block-spacer {
+    height: 19px !important;
+  }
+
+  .footer_icon {
+    width: 43%;
+    margin: 20px auto;
+  }
+
+  .liste li {
+    display: inline-block;
+    padding-right: 6px;
+    margin-right: 6px;
+  }
+
+  .intro-tekst {
+    margin: 20px !important;
+  }
+
+  .smal-tekst .wp-block-cover__inner-container {
+    width: 100%;
+  }
+
+  .mec-wrap .mec-search-form .mec-date-search select:last-child {
+    width: 50%;
+    background: #fff;
   }
 }
 
