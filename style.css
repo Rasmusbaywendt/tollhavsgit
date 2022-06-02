@@ -11,8 +11,9 @@ Updated: 2022-05-03 08:36:22
 
 */
 
-/* GENERELLE STYLES */
+/* -------------------------------------- GENERELLE STYLES -------------------------------------- */
 
+/* Sætter styles for body */
 body {
   background-color: #f7f5ea;
   font-family: degular, sans-serif;
@@ -20,7 +21,7 @@ body {
   font-weight: 500;
   font-style: normal;
 }
-
+/* definerer skrifttyperne */
 h1,
 h2,
 h3,
@@ -55,42 +56,43 @@ p {
   font-weight: 500;
   font-style: normal;
 }
-
+/* hvis der er noget som scroller, bliver det gjort med en overgang i stedet for direkte */
 html {
   scroll-behavior: smooth;
 }
-
+/* fjerner "Theme made by Anders" */
 .theme-by {
   display: none;
 }
-
+/* sætter margin til lister */
 ol,
 ul {
   margin: 0.5em 0 1.5em 0;
 }
-
+/* definerer bredden af vores indhold */
 .section-inner.thin {
   max-width: 1140px;
 }
-
+/* definerer bredden af vores containers og placerer dem i midten */
 .wp-block-cover__inner-container {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+/* fjerner Wordpress standard header */
 .page-header.section-inner.thin {
   display: none;
 }
-
-.site-header .custom-logo img {
-  width: 210px;
-  height: 22px;
-}
-
+/* fjerner muligheden for kommentare */
 #comments {
   display: none;
 }
 
+/* sikre at knapper har en pointer */
+button {
+  cursor: pointer;
+}
+
+/* sætter regler for blocks som vi bygger med */
 .entry-content .alignnone,
 .entry-content .aligncenter,
 .entry-content .alignwide,
@@ -98,6 +100,8 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
 }
+
+/* fjerner margin fra blocks */
 .wp-block-archives,
 .wp-block-button,
 .wp-block-buttons,
@@ -124,23 +128,30 @@ ul {
   margin-bottom: 0;
   margin-top: 0;
 }
-
+/* tilføjer padding til kolonner vi gør brug af */
 .wp-block-columns:where(.has-background) {
   padding: 3.25em 2.375em;
 }
-
+/* fjerner underline fra links */
 a {
   text-decoration: none;
 }
 
-/* HEADER */
+/* -------------------------------------- HEADER -------------------------------------- */
 
+/* sætter reglerne for logoet da det er en svg */
+.site-header .custom-logo img {
+  width: 210px;
+  height: 22px;
+}
+/* definere links i navigationen */
 .alt-nav a {
   color: #707070;
   text-decoration: none;
   font-size: 1.3rem;
 }
 
+/* Løsningen på at det aktive punkt i navigationen er farvet */
 .page-id-28 #menu-item-336 a {
   color: #000;
 }
@@ -160,33 +171,30 @@ a {
 .page-id-39 #menu-item-337 a {
   color: #000;
 }
-
+/* sætter hover på links til samme farve */
 .alt-nav a:hover {
   color: #000;
 }
-
+/* padding på header */
 .site-header {
   padding: 20px 0;
 }
-
-.wp-custom-logo .site-header {
-  padding: 18px 0;
-}
-
+/* padding på logo */
 .wp-custom-logo .site-header {
   padding: 20px 0;
 }
 
 /* BURGERMENU */
 
+/* skriftstørrelse på links i burgermenu */
 .site-nav ul:first-child li {
   font-size: 3rem;
 }
-
+/* definerer faven */
 #menu-min-menu-1 {
   color: #707070;
 }
-
+/* løsningen på det aktive punkt i burgermenu */
 .page-id-28
   .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-home.current-menu-item.page_item.page-item-28.current_page_item.menu-item-336 {
   color: #000;
@@ -211,77 +219,84 @@ a {
   .menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-337 {
   color: #000;
 }
-
+/* baggrundsfarve for burgermenu */
 .site-nav {
   background: #f7f5ea;
 }
-
+/* fjerner en underline på links som lå i temaet */
 .site-nav ul:last-child a:hover,
 .site-nav ul:last-child .current-menu-item > a {
   border-bottom-color: transparent !important;
 }
 
-/* GENBRUGELIGE KLASSER */
+/* -------------------------------------- GENBRUGELIGE KLASSER -------------------------------------- */
+
+/* gør teksten grøn */
 .groen_tekst {
   color: #1a592f !important;
 }
-
+/* gør teksten gul */
 .gul_tekst {
   color: #ffe882 !important;
 }
 
+/* gør teksten hvid */
 .hvid_tekst {
   color: #f7f5ea;
 }
 
+/* gør teksten grå */
 .graa_tekst {
   color: #707070;
 }
 
+/* giver elementet display: inline-block */
 .inline-block {
   display: inline-block;
 }
 
-.find-vej {
-  padding: 10% 0 10% 0;
-}
-
+/* regel man kan bruge til at billedet bliver fuld bredde af vores indhold */
 .fullwidth img {
   width: 1140px;
   margin: 0 auto;
 }
 
+/* brugt til de små bannere hvor teksten ikke skal være for bred */
 .small-width .wp-block-cover__inner-container {
   max-width: 900px;
 }
 
+/* giver text-align: center */
 .text-align-center {
   text-align: center;
 }
 
+/* giver lidt padding i toppen */
 .small-pad-top {
   padding-top: 7%;
 }
+/* giver margin i bunden */
 .margin-bottom {
   margin-bottom: 10%;
 }
-
+/* giver margin i toppen */
 .margin-top {
   margin-top: 5%;
 }
 
+/* fjerner margin */
 .margin-nul {
   margin: 0;
 }
-
+/* giver underline til links */
 .text-deco a {
   text-decoration: underline;
 }
-
+/* giver p en underline */
 .text-deco2 p {
   text-decoration: underline;
 }
-
+/* definerer en knap vi gør brug af */
 .button-basis-groen {
   background-color: #1a592f;
   color: #f7f5ea;
@@ -289,11 +304,11 @@ a {
   border-radius: 5px;
   padding: 0.7em 1.5em;
 }
-
+/* giver hoverfunktion til knappen */
 .button-basis-groen:hover {
   opacity: 0.8;
 }
-
+/* brugt til at definerer en knap som skulle kunne noget andet */
 .button-basis-groen2 {
   background-color: #1a592f;
   color: #cce2cb;
@@ -301,11 +316,12 @@ a {
   border-radius: 5px;
   padding: 0.7em 1.5em;
 }
-
+/* sætter hover funktion */
 .button-basis-groen2:hover {
   opacity: 0.8;
 }
 
+/* brugt til vores "tilbage" knapper */
 .button-basis-outline {
   background-color: transparent;
   color: #303030;
@@ -313,24 +329,26 @@ a {
   border-radius: 5px;
   padding: 0.7em 1.5em;
 }
+/* sætter hover */
 .button-basis-outline:hover {
   opacity: 0.8;
 }
-
+/* sætter hover */
 .button-basis-groen2:hover {
   opacity: 0.8;
 }
-
+/* sætter hover */
 .button-basis-groen:hover {
   opacity: 0.8;
 }
 
-/* FORSIDE */
+/* -------------------------------------- FORSIDE -------------------------------------- */
 
+/* fjerner padding fra den første h1 */
 .first-h1 h1 {
   padding: 0;
 }
-
+/* animationen der får pilen under logoet til at hoppe */
 .bounce {
   animation: bounce 2s infinite;
 }
@@ -351,34 +369,33 @@ a {
   }
 }
 
+/* definerer en bredde for smal-tekst */
 .smal-tekst .wp-block-cover__inner-container {
   width: 60%;
 }
 
-.wcps-container-151 .controlsWrap.border div {
-  border: 0 !important;
-}
-
+/* fjerner underline fra "@tollhavskiosk" */
 .h3_insta a {
   text-decoration: none;
 }
-
+/* giver underline til "@tollhavskiosk" ved hover */
 .h3_insta a:hover {
   text-decoration: underline;
 }
 
 /*FOOTER*/
 
+/* definerer regler for hele footer */
 .site-footer {
   padding: 35px 0;
   text-align: center;
 }
-
+/* giver wrapperen flex og justerer content */
 .section_footer.section-inner {
   display: flex;
   justify-content: space-around;
 }
-
+/* definerer p */
 .site-footer p + p {
   font-weight: 500;
   line-height: 1.7;
@@ -387,7 +404,7 @@ a {
   font-size: 1.2rem;
   margin-top: 0;
 }
-
+/* definerer p */
 .site-footer p {
   font-weight: 500;
   line-height: 1.7;
@@ -396,7 +413,7 @@ a {
   font-size: 1.2rem;
   margin-top: 0;
 }
-
+/* definerer links */
 .site-footer a {
   font-weight: 500;
   line-height: 1.7;
@@ -407,76 +424,73 @@ a {
   display: block;
 }
 
+/* giver underline til den første sektion */
 .section_footer1 a:hover {
   text-decoration: underline;
 }
-
+/* gør underline transparent ved hover */
 .site-footer a:hover {
   border-bottom-color: transparent;
 }
-
+/* gør tredje sektion til inline-block */
 .section_footer3 a {
   display: inline-block;
 }
 
+/* giver den sidste footer-sektion regler */
 .section_footer5 a {
   text-align: center;
   width: 48%;
   display: inline-block;
 }
 
+/* definerer den sidste footer-sektion */
 .section_footer5 {
   width: 23%;
   margin: 0 auto;
   border-top: 2px solid #e0dad6;
 }
 
+/* regler for vores SoMe ikoner */
 .footer_icon img {
   margin: 0 auto;
   width: 180px;
   height: 30px;
 }
 
+/* regel for footer ikon */
 .footer_icon {
   margin-bottom: 80px;
 }
 
-/* FIND VEJ */
-
-button {
-  cursor: pointer;
-}
+/* find vej - skjuler tekstfeltet som har teksten man kopierer - adressen er så gjort til knappen */
 #content {
   display: none;
 }
-
-.button-gul {
-  background-color: transparent;
-  border: 3px solid #ffe882;
-  border-radius: 15px;
-  color: #ffe882;
-}
-
+/* Adresse-knappen */
 .button-kopier {
   background-color: transparent;
 }
+/* Adresse-knap p */
 
 .button-kopier p {
   padding-right: 10px;
 }
 
-/* UDLEJNING */
+/* -------------------------------------- UDLEJNING -------------------------------------- */
 
+/* første felt som vises når man trykker læs mere */
 #myDIV {
   color: #1a592f;
   display: none;
 }
-
+/* andet felt som vises når man trykker læs mere */
 #myDIV2 {
   color: #1a592f;
   display: none;
 }
 
+/* book lokale knappen */
 .collapsible2 {
   cursor: pointer;
   outline: none;
@@ -485,12 +499,14 @@ button {
   display: block;
 }
 
+/* book lokalet knappens p (bruges muligvis ikke) */
 .collapsible2 p {
   margin: 0;
   line-height: 1.3;
   font-size: 1.2rem;
 }
 
+/* teksten i book lokalet knappen */
 .collapsible2 a {
   text-decoration: none;
   font-weight: 500 !important;
@@ -498,6 +514,7 @@ button {
   font-size: 1.3rem !important;
 }
 
+/* læs mere knappen */
 .collapsible1 {
   background-color: transparent;
   color: #1a592f;
@@ -505,12 +522,14 @@ button {
   margin-top: 16px;
 }
 
+/* læs mere knappens p (bruges muligvis ikke) */
 .collapsible1 p {
   font-size: 1.3rem;
   margin: 0;
   font-weight: bold;
 }
 
+/* læs mere knappens a */
 .collapsible1 a {
   text-decoration: none;
   font-weight: 500 !important;
@@ -518,15 +537,25 @@ button {
   font-size: 1.3rem !important;
 }
 
+/* bredden på lokale-sektionerne */
+.udlejning_sektion .wp-block-cover__inner-container {
+  max-width: 760px;
+}
+
+/*---------- BOOKING FORMULAR -------- */
+
+/* lokale-valg feltet */
 #lokale1 {
   font-size: 1rem;
   background-color: #fff;
 }
 
+/* teksten over felterne i formularen */
 .wpdevelop label {
   font-weight: normal !important;
 }
 
+/* >> -pilen ved siden af måneden i formularen */
 .datepick-inline .calendar-links .datepick-prev a,
 .datepick-inline .calendar-links .datepick-next a,
 .datepick-inline .calendar-links .datepick-prev a:hover,
@@ -535,57 +564,56 @@ button {
   font-weight: 500 !important;
 }
 
+/* størrelsen på >> -pilen */
 .datepick-inline .calendar-links .datepick-prev a,
 .datepick-inline .calendar-links .datepick-next a {
   font-size: 3em !important;
 }
 
-.datepick-inline .datepick-header {
-  line-height: 1.1em !important;
-}
-
-.udlejning_sektion .wp-block-cover__inner-container {
-  max-width: 760px;
-}
-
+/* bredden på kalenderen */
 .bk_calendar_frame.months_num_in_row_.cal_month_num_2.wpbc_timeslot_day_bg_as_available {
   width: auto !important;
 }
 
+/* bredden på hele booking-sektionen */
 #booking_form1 {
   width: 100%;
   margin: 0 auto;
 }
-
+/* H2-teksten over booking-sektion */
 #Book {
   text-align: center;
 }
 
+/*muligvis en gammel regel */
 .active {
   border: none;
   border-top: 5px solid #1a592f;
   border-radius: 0;
 }
 
+/*muligvis en gammel regel */
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
 }
-
+/* en ekstra kalender som vises som standard */
 .datepick-one-month:nth-of-type(2) {
   display: none;
 }
-
+/* sætter bredden på booking-feltet */
 .cal_month_num_2 .datepick-one-month {
   width: 100% !important;
   float: left;
 }
 
+/* selve teksten der viser måneden - den står i et span-tag */
 .datepick-header span {
   font-size: 2rem !important;
 }
 
+/* wrapper for hele tekstfeltet i formen */
 .wpdevelop .form-group {
   margin-bottom: 28px;
 }
@@ -604,13 +632,11 @@ th span {
   font-weight: 400 !important;
 }
 
-.datepick-inline .datepick-header {
-  padding: 0;
-}
+/* farven på felterne der ikke kan vælges i kalenderen */
 .datepick-days-row td {
   height: 75px !important;
 }
-
+/* regler for teksten på de felter som ikke kan vælges eller er optaget */
 .datepick-days-cell.datepick-unselectable.cal4date-6-8-2022.date2approve span {
   font-size: 1rem !important;
   text-align: center;
@@ -619,6 +645,7 @@ th span {
   font-weight: 400 !important;
 }
 
+/* bredden på formen */
 .booking_form .form-group .controls select,
 .booking_form select,
 .booking_form textarea,
@@ -626,37 +653,42 @@ th span {
   width: 49% !important;
 }
 
+/* bredden på kalenderen */
 .wpbc_change_over_triangle {
   width: 100% !important;
 }
 
+/* definerer farven på teksten over formen */
 .form-group {
   color: #000 !important;
 }
 
+/* wrapper for booking kalender */
 .wpbc_structure_calendar {
   width: 50%;
   display: inline-block;
   padding: 0 2%;
 }
-
+/* wrapper for formen */
 .wpbc_structure_form {
   display: inline-block;
   width: 49%;
 }
-
+/* margin på wrapper for begge */
 .booking_form .form-group {
   margin: 28px 0px !important;
 }
-
+/* farve for felter der ikke kan vælges i booking kalender */
 tbody > tr:nth-child(2n + 1) {
   background: white !important;
 }
 
+/* farve for felter der ikke kan vælges i booking kalender */
 tbody {
   background-color: white !important;
 }
 
+/* gør muligvis ikke noget... */
 .datepick-inline
   .datepick-one-month
   .datepick
@@ -667,6 +699,7 @@ tbody {
   text-shadow: none;
 }
 
+/* sætter baggrundsfarven for blocks i kalenderen */
 .block_hints .date2approve.block_check_in_out,
 .block_hints .block_pending,
 .datepick-inline .date2approve,
@@ -676,11 +709,12 @@ td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_i
   div.check-out-div {
   background-color: #f7f5ea !important;
 }
-
+/* sætter baggrundsfarven for ugedage */
 .datepick-title-row {
   background-color: white !important;
 }
 
+/* styles for "send"knappen */
 .wpbc_structure_form button {
   background-color: transparent !important;
   border: 1px solid #303030 !important;
@@ -694,11 +728,16 @@ td.timespartly.check_in_time.check_out_time.check_out_time_date_approved.check_i
   text-transform: uppercase !important;
 }
 
+/* styles for måneden */
 .datepick-inline .datepick-header {
   color: #000 !important;
   font-weight: 600;
   text-shadow: 0 1px 0 #fff;
+  padding: 0;
+  line-height: 1.1em !important;
 }
+
+/* styles for ugedage */
 
 div.datepick-inline .datepick-title-row th {
   border: 1px solid #ccc;
@@ -707,7 +746,7 @@ div.datepick-inline .datepick-title-row th {
   text-transform: uppercase;
 }
 
-/* Linjer mellem kalender fjernes */
+/*  Linjer mellem kalender fjernes */
 .block_hints .block_free,
 .block_hints .block_time,
 .block_hints .block_booked,
@@ -728,8 +767,9 @@ div.datepick-inline .datepick-title-row th {
   background: none repeat scroll 0 0 #fff;
 }
 
-/* EVENT styles */
+/* -------------------------------------- EVENT styles  --------------------------------------*/
 
+/* styles for teksten i "VÆLG" og Måned/liste */
 .mec-wrap .mec-totalcal-box input,
 .mec-wrap .mec-totalcal-box select,
 .mec-checkboxes-search .mec-searchbar-category-wrap,
@@ -738,24 +778,23 @@ div.datepick-inline .datepick-title-row th {
   text-transform: uppercase;
 }
 
+/* bredde og farve for det første "VÆLG" felt */
 .mec-wrap .mec-search-form .mec-date-search select {
   width: 33%;
   background-color: #fff;
 }
-
+/* bredde og farve for det andet "VÆLG" felt */
 .mec-wrap .mec-search-form .mec-date-search select:last-child {
   width: 20%;
   background: #fff;
 }
 
+/* farve på kalender ikonet i topbaren */
 .page-id-37 .mec-sl-calendar {
   background-color: #fff !important;
 }
 
-option {
-  font-family: degular !important;
-}
-
+/* tekststørrelser for topbaren */
 .mec-checkboxes-search .mec-searchbar-category-wrap,
 .mec-wrap .mec-totalcal-box .mec-totalcal-view span,
 .mec-wrap .mec-totalcal-box input,
@@ -763,12 +802,12 @@ option {
   font-size: 15px;
   color: #313131;
 }
-
+/* padding på Måned/liste */
 .mec-wrap .mec-totalcal-box .mec-totalcal-view span {
-  font-size: 15px;
   padding: 0 20px;
 }
 
+/* top på ikoner ved siden af dato og tidspunkt */
 .mec-event-list-standard .mec-date-details::before,
 .mec-event-list-standard .mec-local-time-details::before,
 .mec-event-list-standard .mec-time-details::before,
@@ -776,6 +815,7 @@ option {
   top: 25%;
 }
 
+/* styles for "load more"-knappen */
 .mec-load-more-button {
   font-size: 15px !important;
   font-weight: 600 !important;
@@ -787,49 +827,53 @@ option {
   color: #303030 !important;
   border: 1px solid #303030;
 }
+/* hover for "load more knappen */
 .mec-load-more-button:hover {
   opacity: 0.8;
   color: #303030 !important;
   background-color: #f7f5ea !important;
   border: 1px solid #303030;
 }
-
+/* fjerner baggrundsfarve af bund-sektionen af et event i liste-view */
 .mec-event-footer {
   background: none !important;
 }
 
 /* Beskrivelse af event. */
 
+/* skriftstørrelse af måneden i liste-view */
 .mec-month-divider span {
   font-size: 2.5rem;
 }
 
+/* styles for eventets navn */
 .mec-event-list-standard .mec-event-title {
   font-size: 4rem !important;
   font-style: italic !important;
 }
-
+/* styles for eventets navn */
 .mec-event-list-standard .mec-event-title a {
   text-transform: normal !important;
   color: #463e3e !important;
   font-weight: 600;
 }
-
+/* styles for beskrivelsen af eventet */
 .mec-event-description {
   font-size: 1.3rem;
 }
 
+/* styles for datoen i listeview */
 .mec-event-list-standard .mec-event-meta span.mec-event-d,
 .mec-event-list-standard .mec-event-meta span.mec-event-m {
   font-size: 1.3rem;
   font-weight: 500;
 }
-
+/* styles for tidspunktet i listeview */
 .mec-event-list-standard .mec-time-details {
   font-size: 1.3rem;
   font-weight: 500;
 }
-
+/* styles for knapper på eventet i liste-view */
 .mec-event-footer .mec-booking-button {
   box-shadow: none;
   font-size: 15px !important;
@@ -847,7 +891,7 @@ option {
   border-radius: 5px !important;
   border: 1px solid #e8e8e8 !important;
 }
-
+/* hover på knappen i liste-view */
 .mec-event-footer .mec-booking-button:hover {
   opacity: 0.8;
   color: #f7f5ea !important;
@@ -855,18 +899,21 @@ option {
   border: none;
 }
 
-/* event-single-page */
+/*-------------------------------------- event-single-page  --------------------------------------*/
 
+/* styles for billedet */
 .mec-events-event-image {
   max-width: 44%;
   display: inline-block;
   margin-top: 5%;
 }
 
+/* margin på sidebar med dato,tid og kategori */
 .mec-event-info-desktop.mec-event-meta.mec-color-before.mec-frontbox {
   margin-top: 8%;
 }
 
+/* styles for wrapper med teksten */
 .mec-single-event .mec-event-content {
   max-width: 50%;
   margin-left: 1%;
@@ -874,13 +921,17 @@ option {
   float: right;
 }
 
+/* fjerner "add to calender" */
 .mec-single-event .mec-event-export-module {
   display: none;
 }
+
+/* fjerner countdown */
 .mec-events-meta-group.mec-events-meta-group-countdown {
   display: none;
 }
 
+/* styles for overskriften */
 .mec-wrap .mec-single-title,
 .single-mec-events .mec-wrap.mec-no-access-error h1 {
   font-size: 4rem;
@@ -890,44 +941,42 @@ option {
   color: #303030;
 }
 
+/* p-teksten */
 .mec-single-event-description.mec-events-content p {
   font-size: 1.3rem !important;
 }
 
-.mec-month-divider span {
-  font-size: 2.5rem;
-}
-
+/* wrapper for billede og tekst */
 .mec-wrap .col-md-8 {
   width: 76.7%;
 }
 
+/* wrapper for sidebar */
 .mec-wrap .col-md-4 {
   width: 23.3%;
 }
 
-/* WOOCOMMERCE SINGLE PAGE */
+/* -------------------------------------- MAD, DRIKKE & MERE -------------------------------------- */
 
+/* fjerner knap */
 .woocommerce ul.products li.product .button {
-  margin-top: 1em;
   display: none;
 }
-
+/* fjerner cart */
 .woocommerce div.product form.cart {
-  margin-bottom: 2em;
   display: none;
 }
-
+/* fjerner et tab */
 .woocommerce div.product .woocommerce-tabs ul.tabs {
   display: none;
 }
 
+/* fjerner skip to content */
 .skip-link button {
   display: none;
 }
 
-/* MAD, DRIKKE & MERE */
-
+/* styles for prisen */
 .woocommerce ul.products li.product .price {
   color: #1a592f !important;
   display: block !important;
@@ -935,134 +984,190 @@ option {
   margin-bottom: 0.5em !important;
   font-size: 1.3rem !important;
 }
-
+/* styles for pris */
 .woocommerce-Price-amount.amount {
   color: #1a592f;
 }
 
+/* styles for alle produkter i liste-view */
 .wc-block-grid__product {
   text-align: left;
   list-style: none;
   font-weight: 500;
 }
-
+/* hover på billede i listeview */
 .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail:hover {
   opacity: 60.5%;
 }
 
-#tab-description {
-  width: 50% !important;
-  display: inline-block;
-  padding-left: 4%;
-}
-.woocommerce-tabs.wc-tabs-wrapper {
-  width: 50%;
-  display: inline;
-}
-
-.product_meta {
-  display: none;
-}
-
-.woocommerce div.product div.summary {
-  margin-bottom: 0;
-}
-
-.woocommerce div.product p.price,
-.woocommerce div.product span.price {
-  color: #1a592f;
-  font-size: 1.25em;
-}
-
-.woocommerce-result-count {
-  display: none;
-}
-
-#tab-description h2:first-of-type {
-  display: none;
-}
-
+/* styles for teksten under billederne */
 .wc-block-grid__product-title {
   text-align: left;
   font-size: 1.5rem !important;
   font-weight: 500;
 }
 
+/* fjerner margin fra produkt-titlen */
 .wc-block-grid__product-title p {
   margin: 0;
 }
 
+/* -------------------------------------- WOOCOMMERCE SINGLE PAGE -------------------------------------- */
+
+/* styles for tekst-indholdet */
+#tab-description {
+  width: 50% !important;
+  display: inline-block;
+  padding-left: 4%;
+}
+/* milliliter på produkter  */
+.woocommerce-tabs.wc-tabs-wrapper {
+  width: 50%;
+  display: inline;
+}
+
+/* fjerner kategori over produkt */
+.product_meta {
+  display: none;
+}
+
+/* fjerner margin på sektion over teksten */
+.woocommerce div.product div.summary {
+  margin-bottom: 0;
+}
+
+/* styles for prisen */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  color: #1a592f;
+  font-size: 1.25em;
+}
+
+/* styles for relaterede produkter */
+.related.products {
+  float: left;
+  width: 100%;
+}
+
+/* styles for relaterede produkter titlen */
 .woocommerce-loop-product__title {
   font-size: 1.5rem !important;
   font-weight: 500;
 }
 
-.related.products {
-  float: left;
-}
-
-#tab-description h2 {
-  font-size: 4rem !important;
-}
-
-.woocommerce-product-details__short-description {
-  display: none;
-}
-
-.price {
-  margin: 0;
-}
-
-/* MAD DRIKKE & MERE - KATEGORI */
+/* fjerner et eller andet... muligvis en gammel feature */
 .woocommerce-result-count {
   display: none;
 }
 
-.orderby {
+/* Fjerner "Description" h2 fra siden */
+#tab-description h2:first-of-type {
   display: none;
 }
 
+/* style for h2/produktets navn */
+#tab-description h2 {
+  font-size: 4rem !important;
+}
+
+/* fjerner en kort beskrivelse over produktets navn */
+.woocommerce-product-details__short-description {
+  display: none;
+}
+
+/* sætter nul margin på prisen */
+.price {
+  margin: 0;
+}
+
+/* fjerner skip to content */
 .skip-link.button {
   display: none !important;
 }
 
+/* ---------------- MAD DRIKKE & MERE - KATEGORI ------------------- */
+
+/* muligvis en gammel feature */
+.orderby {
+  display: none;
+}
+
+/* styles for filtrering */
 .liste li {
   display: inline-block;
   padding-right: 15px;
   margin-right: 15px;
 }
 
+/* definerer en border/streg imellem hvert punkt */
 .liste li:not(:last-of-type) {
   border-right: 2px solid #d1cfc6;
 }
-
+/* styles for filtreringspunkterne  */
 .liste a {
   text-decoration: none;
   color: #707070;
   font-size: 1.3rem;
 }
 
+/* hover for filtreringspunkter */
 .liste a:hover {
   color: #000;
 }
 
+/* cut er en klasse som den punkt i filtreringen har */
 .cut a {
   color: #000;
   text-decoration: none;
 }
 
-/* RESPONSIVE CSS */
+/*  -------------------------------------- Pop-up styles  -------------------------------------- */
+
+.pum-theme-1245 .pum-title,
+.pum-theme-enterprise-blue .pum-title {
+  color: #1a592f !important;
+  font-family: degular !important;
+  font-weight: 600 !important;
+  font-size: 4rem !important;
+}
+
+.pum-theme-1245 .pum-content,
+.pum-theme-enterprise-blue .pum-content {
+  color: #1a592f !important;
+}
+
+.pum-theme-1245 .pum-content + .pum-close,
+.pum-theme-enterprise-blue .pum-content + .pum-close {
+  color: #f7f5ea !important;
+  background-color: #1a592f !important;
+  width: 55px !important;
+  height: 55px !important;
+  font-size: 52px !important;
+}
+
+.pum-theme-1245 .pum-container,
+.pum-theme-enterprise-blue .pum-container {
+  background-color: #f7f5ea !important;
+}
+
+.entry-content .alignwide {
+  margin-left: 0;
+  max-width: 1140px;
+  width: 1140px;
+}
+
+/* -------------------------------------- RESPONSIVE CSS -------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
-  body {
+  /* body {
     background-color: green;
-  }
+  } */
 }
 
 @media only screen and (max-width: 1200px) {
-  body {
+  /* body {
     background-color: blue;
-  }
+  } */
 
   h1 {
     font-weight: 700;
@@ -1192,13 +1297,52 @@ option {
     margin-left: 2%;
     max-width: 92%;
   }
+
+  .mec-wrap .col-md-8 {
+    width: 100%;
+  }
+
+  .mec-wrap .col-md-4 {
+    width: 100%;
+  }
+
+  .mec-single-event .mec-event-content {
+    max-width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: inherit;
+  }
+
+  .mec-events-event-image {
+    max-width: 100%;
+    display: inline-block;
+    margin-top: 5%;
+  }
+
+  .mec-event-info-desktop.mec-event-meta.mec-color-before.mec-frontbox {
+    width: 100%;
+    display: inline-block;
+    margin-top: 0 !important;
+  }
+
+  .mec-event-social.mec-frontbox {
+    float: inherit;
+  }
+
+  .mec-container {
+    width: 640px;
+  }
+
+  .woocommerce-loop-product__title p {
+    margin-bottom: 1%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
-  body {
+  /* body {
     background-color: red;
     font-size: 1rem;
-  }
+  } */
 
   h1 {
     font-size: 6rem;
@@ -1306,12 +1450,16 @@ option {
     margin-left: 0;
     max-width: 92%;
   }
+
+  .mec-container {
+    width: 446px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+  /* body {
     background-color: lightblue;
-  }
+  } */
   h1 {
     font-size: 4rem;
   }
@@ -1369,6 +1517,10 @@ option {
 
   .mec-event-list-standard .mec-event-title {
     margin: 0px 0 30px !important;
+  }
+
+  .wp-block-spacer:first-of-type {
+    height: 44px !important;
   }
 
   /* FOOTER */
@@ -1444,6 +1596,47 @@ option {
   .mec-wrap .mec-search-form .mec-date-search select:last-child {
     width: 56% !important;
     background: #fff;
+  }
+
+  .mec-container {
+    width: 350px;
+  }
+
+  .mec-wrap .mec-single-title,
+  .single-mec-events .mec-wrap.mec-no-access-error h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: inherit !important;
+    color: #303030;
+  }
+
+  .mec-single-event-description.mec-events-content p {
+    font-size: 1rem !important;
+  }
+
+  #tab-description h2 {
+    font-size: 3rem !important;
+  }
+
+  #tab-description {
+    width: 100% !important;
+    display: inline-block;
+    padding-left: 0%;
+  }
+
+  .woocommerce div.product p.price,
+  .woocommerce div.product span.price {
+    color: #1a592f;
+    font-size: 2rem;
+  }
+
+  .price {
+    margin: 0 !important;
+  }
+
+  #tab-description h2 {
+    margin-top: 2%;
   }
 }
 
@@ -1538,39 +1731,8 @@ option {
     width: 50%;
     background: #fff;
   }
-}
 
-/* Pop-up */
-
-.pum-theme-1245 .pum-title,
-.pum-theme-enterprise-blue .pum-title {
-  color: #1a592f !important;
-  font-family: degular !important;
-  font-weight: 600 !important;
-  font-size: 4rem !important;
-}
-
-.pum-theme-1245 .pum-content,
-.pum-theme-enterprise-blue .pum-content {
-  color: #1a592f !important;
-}
-
-.pum-theme-1245 .pum-content + .pum-close,
-.pum-theme-enterprise-blue .pum-content + .pum-close {
-  color: #f7f5ea !important;
-  background-color: #1a592f !important;
-  width: 55px !important;
-  height: 55px !important;
-  font-size: 52px !important;
-}
-
-.pum-theme-1245 .pum-container,
-.pum-theme-enterprise-blue .pum-container {
-  background-color: #f7f5ea !important;
-}
-
-.entry-content .alignwide {
-  margin-left: 0;
-  max-width: 1140px;
-  width: 1140px;
+  .mec-container {
+    width: 270px;
+  }
 }
